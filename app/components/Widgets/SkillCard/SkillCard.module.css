@@ -1,0 +1,50 @@
+.sectioncontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 92%;
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  background-size: cover;
+  background-color: #fffdfa;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+}
+
+.cardcontainer {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  padding: 1em;
+  max-width: 400px;
+  height: 15em;
+  background-color: #ffffff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  border-bottom: solid 2px rgba(133, 133, 133, 0.1);
+}
+
+.icon {
+  padding: auto;
+}
+
+.iconlabel {
+  display: flex;
+  flex-direction: row;
+}
+
+.label {
+  padding-left: 10px;
+  font-size: 18px;
+  margin-bottom: 1em;
+  border-bottom: solid 2px rgba(133, 133, 133, 0.1);
+}
+
+.description {
+  font-size: clamp(17px);
+}
