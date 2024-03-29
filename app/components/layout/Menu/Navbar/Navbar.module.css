@@ -1,0 +1,25 @@
+.show,
+.hidden {
+  position: fixed;
+  left: 0;
+  transition: top 0.2s;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 16px;
+  width: 100%;
+  height: 64px;
+  background-color: #fafcff;
+  border-bottom: solid 2px rgba(133, 133, 133, 0.1);
+  z-index: 20;
+  transform: translate3d(0, 0, 0);
+}
+
+.show {
+  top: 0;
+}
+
+.hidden {
+  top: -66px;
+}
