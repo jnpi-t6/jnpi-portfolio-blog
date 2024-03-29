@@ -16,5 +16,8 @@ const config = {
     autodocs: "tag",
   },
   staticDirs: ["../public"],
+  features: {
+    experimentalRSC: true,
+  },
 };
 export default config;
