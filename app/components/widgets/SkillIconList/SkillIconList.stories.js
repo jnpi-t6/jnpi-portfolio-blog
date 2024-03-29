@@ -1,7 +1,7 @@
 import SkillIconList from "./SkillIconList";
 
 export default {
-  title: "SkillIconList",
+  title: "widget/SkillIconList",
   component: SkillIconList,
 };
 

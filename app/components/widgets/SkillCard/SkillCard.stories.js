@@ -1,7 +1,7 @@
 import SkillCard from "./SkillCard";
 
 export default {
-  title: "SKillCard",
+  title: "widget/SKillCard",
   component: SkillCard,
 };
 
