@@ -3,49 +3,48 @@ export const skills = [
     label: "HTML5",
     icon: "HTML5Icon",
     description:
-      "ブロックチェーンのDapps（分散アプリ）に触れて、フロントエンドの面白さと楽しさに感動しました。",
+      "ページの設計を細かく明確にすることで、セマンティックに書ける。",
   },
   {
     label: "CSS",
     icon: "CSSIcon",
     description:
-      "CSSの設計は、デザインにとって大事な「統一感」や「バランス」がそのまま反映される言語だと思います。",
+      "CSSの設計はデザインと直結している。「統一感」「バランス」「４原則」。考え方が反映される言語だと思う。Keep DRY!",
   },
   {
     label: "JavaScript",
     icon: "JavaScriptIcon",
-    description:
-      "初めて学んだ言語です。ブロックチェーンでスナイプボットを作りたくて学び始めたため、DOM操作を知るより先に、APIを叩いて、Node.jsでプログラムを動かす操作を覚えました。",
+    description: `初めて学んだ言語。freeCodeCampで学習。ロジックを表現できた時に感動。map関数が好き。`,
   },
   {
     label: "React",
     icon: "ReactIcon",
     description:
-      "Reactの分からない部分は、たいていJavaScriptの部分だと思います。innerHTMLを直接触らずに済んだり、とても便利だと思います。",
+      "便利。公式ドキュメントが関数コンポーネントでの説明に変わったタイミングで勉強できた。もっと使いこなしたい。",
   },
   {
     label: "Nextjs",
     icon: "NextjsIcon",
     description:
-      "SSG（静的サイトジェネレーター）として使い始めました（いわゆるJamstackの編成の一環として）。これでブログを作って、MicroCMSで投稿管理、NetlifyかVerselにデプロイ、が個人的にやりやすく感じました。",
+      "便利。SSGとして使用。これでブログを作って、MicroCMSで投稿管理、NetlifyかVerselにデプロイ、が個人的にやりやすく感じた。",
   },
 
   {
     label: "Github",
     icon: "GithubIcon",
     description:
-      "init, add, commit, push, branch, checkout, merge, その他諸々。ブロックチェーンみたいにハッシュで管理しているらしいです。自分は個人開発を始めた当初、Gitの存在を知らずにvscode上の履歴を全消しした経験があります。事前に勉強しましょう。",
+      "便利で感動。ブロックチェーンみたいにハッシュで管理しているらしい。",
   },
   {
     label: "Netlify",
     icon: "NetlifyIcon",
     description:
-      "ホスティングサービス。Verselでも楽ですが、Jamstackの提唱者が作ったものということで、リスペクトを込めて使用。管理画面も分かりやすく使いやすいと思います。",
+      "VerselのほうがNext.jsとの相性がいいけれど、Jamstack提唱。他にはAWS Amplify、Cloudflare、Firebaseなど、色々ある。",
   },
   {
-    label: "StyledComponents",
+    label: "Styled Components",
     icon: "StyledComponentsIcon",
     description:
-      "他のCSS-in-JS同様、同一ファイル上でコンパクトにcssを書けるし、何よりpropsをcssに投げられるのが便利。TailwindCSSのほうが人気なようですが、海外のサイトではよく使用されているような気がします。",
+      "他のCSS-in-JS同様、同一ファイル上でコンパクトにcssを書けるし、何よりpropsをcssに投げられるのが便利。",
   },
 ];
