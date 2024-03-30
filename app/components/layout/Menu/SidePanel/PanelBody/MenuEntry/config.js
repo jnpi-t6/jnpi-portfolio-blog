@@ -2,7 +2,7 @@ export const links = [
   {
     label: "BlogHome",
     icon: "HomeIcon",
-    href: "/",
+    href: "/blog",
   },
   {
     label: "Web制作・スキル",

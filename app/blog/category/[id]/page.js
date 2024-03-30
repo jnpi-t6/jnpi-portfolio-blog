@@ -30,7 +30,7 @@ export default async function CategoryPage({ params: { id } }) {
 
   return (
     <>
-      <div className={styles.container}>
+      <div className={styles.container} key={catName}>
         {catName?.map((cat) => (
           <h2 key={cat.id} className={styles.title}>
             {cat.name}

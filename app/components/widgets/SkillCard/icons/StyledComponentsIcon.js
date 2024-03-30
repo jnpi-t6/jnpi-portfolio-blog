@@ -60,8 +60,8 @@ export default function StyledComponentsIcon({ width }) {
             y2="0"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#DB7093" />
-            <stop offset="1" stop-color="#F3B661" />
+            <stop stopColor="#DB7093" />
+            <stop offset="1" stopColor="#F3B661" />
           </linearGradient>
         </defs>
       </svg>

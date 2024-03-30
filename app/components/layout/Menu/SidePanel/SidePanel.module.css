@@ -10,7 +10,9 @@
   background-color: #faf9fa;
   width: 0;
   height: 100vh;
-  transition: padding-top 0.2s, width 0.2s;
+  transition:
+    padding-top 0.2s,
+    width 0.2s;
   border-right: 0;
   z-index: 11;
   overflow: hidden;
@@ -28,5 +30,5 @@
 .open {
   width: 240px;
   border-right: 2px solid rgba(133, 133, 133, 0.1);
-  overflow: initial;
+  overflow-y: initial;
 }
