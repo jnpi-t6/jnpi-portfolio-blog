@@ -30,7 +30,7 @@ export default async function BlogList({ contents }) {
             ) : (
               <div className={styles.defaultEyecatch}>
                 <Image
-                  src="/bookspark.png"
+                  src="/defaultImage.png"
                   alt="blog-image"
                   width={400}
                   height={300}
