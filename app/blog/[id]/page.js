@@ -4,6 +4,22 @@ import Image from "next/image";
 import parse from "html-react-parser";
 import { getPosts, getBlogList } from "@/lib/api";
 
+export async function generateMetadata({ params: { id } }) {
+  const metadata = await getPosts(id);
+
+  if (!metadata) {
+    return {};
+  }
+
+  return {
+    title: metadata.title,
+    openGraph: {
+      title: metadata.title,
+      images: metadata.eyecatch,
+    },
+  };
+}
+
 export async function generateStaticParams() {
   const { contents } = await getBlogList();
 
