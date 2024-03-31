@@ -57,7 +57,7 @@ export default async function PageDetail({ params: { id } }) {
           ) : (
             <div className={styles.defaultEyecatch}>
               <Image
-                src="/bookspark.png"
+                src="/defaultImage.png"
                 alt="blog-image"
                 width={400}
                 height={300}
