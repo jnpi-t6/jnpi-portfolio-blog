@@ -8,7 +8,7 @@ export default function IntroCard() {
         <h2 className={styles.title}>
           ＜このポートフォリオは
           <span className={styles.highlight}>PancakeSwap</span>
-          を参考にしました＞
+          のメニューコンポーネントを参考にしました＞
         </h2>
         <div className={styles.url}>
           <h3>Pancake UIkit</h3>
@@ -28,13 +28,14 @@ export default function IntroCard() {
             しかし個人的に最初のポートフォリオは理解の確認も兼ねて「Javascriptで書きたい」という思いがあったため、
           </p>
           <p>
-            元々TypeSctiptで書かれているものを読み込んで「型を抜く」という作業をしました。おかげで、TypeScriptの書き方や「データ型」の理解も深まりました。
+            元々TypeSctiptで書かれているPancake
+            UIkitのコードを参照しながら「型を抜く」という作業をしました。おかげで、TypeScriptの書き方や「データ型」の理解も深まりました。
           </p>
           <p>
             現在、きちんと理解しているか確認するため、通称「ブルーベリー本」で具体的に勉強中です。
           </p>
           <p>
-            CSSもこれを参考にしたおかげで、Styled-Componentsで書けるようになりましたが、Next.jsが非推奨にしているという理由から、CSSモジュールで書き直してみました。
+            CSSもこのリポジトリを参考にしたおかげで、Styled-Componentsで書けるようになりましたが、Next.jsが非推奨にしているという理由から、CSSモジュールで書き直してみました。
           </p>
         </div>
       </div>
