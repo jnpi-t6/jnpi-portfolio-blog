@@ -28,11 +28,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ja">
+      <GoogleAnalytics gaId={`${process.env.NEXT_PUBLIC_GA_ID}`} />
       <body className={notoSansJP.className}>
         <Menu>{children}</Menu>
         <Footer />
       </body>
-      <GoogleAnalytics gaId={`${process.env.NEXT_PUBLIC_GA_ID}`} />
     </html>
   );
 }
