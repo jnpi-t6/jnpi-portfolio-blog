@@ -3,7 +3,7 @@ import { getBlogList } from "@/lib/api";
 import BlogList from "../../pageElement/BlogList/BlogList";
 
 export default async function BlogPosts() {
-  const { contents } = await getBlogList({ queries: { limit: 4 } });
+  const { contents } = await getBlogList({ limit: 4 });
 
   return (
     <>
