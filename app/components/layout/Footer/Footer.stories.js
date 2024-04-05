@@ -5,4 +5,4 @@ export default {
   component: Footer,
 };
 
-export const index = () => <Footer />;
+export const Index = () => <Footer />;
