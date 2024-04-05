@@ -1,6 +1,6 @@
 import { Noto_Sans_JP } from "next/font/google";
 import "./styles/globals.css";
-
+import { GoogleAnalytics } from "@next/third-parties/google";
 import Menu from "./components/layout/Menu/Menu";
 import Footer from "./components/layout/Footer/Footer";
 
@@ -32,6 +32,7 @@ export default function RootLayout({ children }) {
         <Menu>{children}</Menu>
         <Footer />
       </body>
+      <GoogleAnalytics gaId={`${process.env.NEXT_PUBLIC_GA_ID}`} />
     </html>
   );
 }
