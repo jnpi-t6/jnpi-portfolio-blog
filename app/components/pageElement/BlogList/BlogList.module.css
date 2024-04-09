@@ -37,7 +37,10 @@
   margin: 2em auto;
   position: relative;
   background-color: #ffffff;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  box-shadow:
+    5px 5px 10px #edebe9,
+    -5px -5px 10px #ffffff;
 }
 
 .eyecatch,
@@ -48,6 +51,7 @@
   padding: 1em;
   margin-bottom: 1em;
   background-color: #eeeeee;
+  border-radius: 12px 12px 0 0;
 }
 
 .title {
@@ -59,6 +63,7 @@
 
 .darkcover {
   position: absolute;
+  border-radius: 12px;
   top: 0;
   left: 0;
   right: 0;
