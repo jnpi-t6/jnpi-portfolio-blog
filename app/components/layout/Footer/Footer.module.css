@@ -10,3 +10,10 @@
   justify-content: center;
   align-items: center;
 }
+
+.githublink {
+  display: flex;
+  position: absolute;
+  right: 0;
+  padding-right: 8px;
+}
