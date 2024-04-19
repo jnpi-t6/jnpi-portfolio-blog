@@ -1,12 +1,9 @@
 import styles from "./allPosts.module.css";
-import { client } from "@/lib/api";
+import { getBlogList } from "@/lib/api";
 import BlogList from "../components/pageElement/BlogList/BlogList";
 
 export default async function BlogPosts() {
-  const { contents } = await client.get({
-    endpoint: "blogs",
-  });
-
+  const { contents } = await getBlogList();
   return (
     <>
       <div className={styles.container}>
