@@ -32,6 +32,7 @@ export default function Accordion({
         className={`${styles.content} ${isOpen ? styles.isOpen : ""} ${
           isOpen && isPushed ? styles.isPushed : ""
         }`}
+        isOpen={isOpen}
         isPushed={isPushed}
         onClick={onClick}
       >
