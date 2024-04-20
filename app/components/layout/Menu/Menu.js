@@ -9,7 +9,11 @@ import SidePanel from "./SidePanel/SidePanel";
 
 export default function Menu({ children }) {
   const [showMenu, setShowMenu] = useState(true);
-  const lastScrollY = useRef(window.scrollY); // useRefを使用してlastScrollYを初期化
+  const lastScrollY = useRef(0); // useRefを使用してlastScrollYを初期化
+
+  useEffect(() => {
+    lastScrollY.current = window.scrollY; // コンポーネントがマウントされた後にwindow.scrollYを設定
+  }, []);
 
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
