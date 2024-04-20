@@ -7,7 +7,7 @@ export default function SidePanel({ isPushed, showMenu, onClick }) {
       <div
         isPushed={isPushed}
         className={`${isPushed ? styles.open : styles.close}
-          ${showMenu ? styles.hidden : styles.show}
+          ${showMenu ? styles.show : styles.hidden}
           `}
       >
         <PanelBody onClick={onClick} />

@@ -1,9 +1,12 @@
 import styles from "./Inner.module.css";
+import { memo } from "react";
 
-export default function Inner({ children }) {
+const Inner = memo(function Inner({ children }) {
   return (
     <>
       <div className={styles.inner}>{children}</div>
     </>
   );
-}
+});
+
+export default Inner;
