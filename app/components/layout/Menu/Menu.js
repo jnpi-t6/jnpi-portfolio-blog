@@ -13,36 +13,34 @@ export default function Menu({ children }) {
 
   useEffect(() => {
     lastScrollY.current = window.scrollY; // コンポーネントがマウントされた後にwindow.scrollYを設定
-  }, []);
 
-  const handleScroll = () => {
-    const currentScrollY = window.scrollY;
-    // スクロールの方向を判定
-    const isScrollingUp = currentScrollY < lastScrollY.current;
-    const isScrollingDown = currentScrollY > lastScrollY.current;
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      // スクロールの方向を判定
+      const isScrollingUp = currentScrollY < lastScrollY.current;
+      const isScrollingDown = currentScrollY > lastScrollY.current;
 
-    // トップの時はナビゲーションバーを表示
-    if (currentScrollY === 0) {
-      setShowMenu(true);
-    }
+      // トップの時はナビゲーションバーを表示
+      if (currentScrollY === 0) {
+        setShowMenu(true);
+      }
 
-    // スクロールダウンでナビゲーションバーを非表示
-    else if (isScrollingDown) {
-      setShowMenu(false);
-    }
+      // スクロールダウンでナビゲーションバーを非表示
+      else if (isScrollingDown) {
+        setShowMenu(false);
+      }
 
-    // スクロールアップでかつ一定の距離を超えた場合にナビゲーションバーを表示
-    else if (isScrollingUp && lastScrollY.current - currentScrollY > 100) {
-      setShowMenu(true);
-    }
+      // スクロールアップでかつ一定の距離を超えた場合にナビゲーションバーを表示
+      else if (isScrollingUp && lastScrollY.current - currentScrollY > 100) {
+        setShowMenu(true);
+      }
 
-    // `throttle` 関数の中で lastScrollY.current を更新
-    lastScrollY.current = currentScrollY;
-  };
+      // `throttle` 関数の中で lastScrollY.current を更新
+      lastScrollY.current = currentScrollY;
+    };
 
-  const throttledHandleScroll = throttle(handleScroll, 100);
+    const throttledHandleScroll = throttle(handleScroll, 100);
 
-  useEffect(() => {
     window.addEventListener("scroll", throttledHandleScroll);
 
     return () => {
