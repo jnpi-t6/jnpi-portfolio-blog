@@ -1,5 +1,5 @@
 import styles from "./Footer.module.css";
-import { GithubIcon } from "../../widgets/SkillCard/icons";
+import { GithubIcon } from "./GithubIcon";
 import Link from "next/link";
 
 export default function Footer() {
